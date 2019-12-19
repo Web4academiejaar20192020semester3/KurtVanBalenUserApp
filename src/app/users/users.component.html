@@ -1,0 +1,12 @@
+<div *ngIf="user">
+<span class="badge">{{user.name}}</span>
+ <p>status: {{user.status}}</p>
+  <input [(ngModel)]="user.status"/>
+  <button type="button" (click)="update(user)">Update</button>
+</div>
+
+<ul *ngFor="let use of users" (click)="select(use)">
+  <li>{{use.id}}</li>
+  <li>{{use.name}}</li>
+  <li>{{use.status}}</li>
+</ul>

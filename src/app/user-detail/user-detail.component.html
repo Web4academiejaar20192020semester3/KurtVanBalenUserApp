@@ -1,0 +1,12 @@
+<div *ngIf="user">
+    <h2>{{user.name}}'s Details</h2>
+    <div><span>Email: </span>{{user.id}}</div>
+    <div><span>age: </span>{{user.name}}</div>
+    <div>
+      <label>name:
+        <input #status [(ngModel)]="user.status" placeholder="status"/>
+      </label>
+    </div>
+    <button (click)="updateUser(status.value)">save</button>
+    <button (click)="goBack()">go back</button>
+</div>
