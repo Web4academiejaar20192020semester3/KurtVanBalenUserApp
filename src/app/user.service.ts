@@ -10,8 +10,8 @@ import { catchError, map, tap } from 'rxjs/operators';
 })
 
 export class UserService {
-  private usersURL = 'http://localhost:8080/Controller?action=users';  // URL to web api
-  private updateURL = 'http://localhost:8080/Controller?action=updateStatus&id=';
+  private usersURL = 'http://localhost:8080/VanBalenKurt_ChatApp_Web_exploded/Controller?action=Users';  // URL to web api
+  private updateURL = 'http://localhost:8080/VanBalenKurt_ChatApp_Web_exploded/Controller?action=updateStatus&id=';
   
   constructor(private http: HttpClient, private messageService: MessageService) { }
   
