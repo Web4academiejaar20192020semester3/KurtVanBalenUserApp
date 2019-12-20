@@ -1,5 +1,7 @@
 export class User {
-  name: string;
+  name: String;
   status: String;
   id: String;
+  gender: String;
+  age: String;
 }

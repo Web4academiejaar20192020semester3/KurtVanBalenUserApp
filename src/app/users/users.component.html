@@ -6,7 +6,9 @@
 </div>
 
 <ul *ngFor="let use of users" (click)="select(use)">
-  <li>{{use.id}}</li>
-  <li>{{use.name}}</li>
-  <li>{{use.status}}</li>
+  <li>ID: {{use.id}}</li>
+  <li>Name: {{use.name}}</li>
+  <li>Status: {{use.status}}</li>
+  <li>Gender: {{use.gender}}</li>
+  <li>Age: {{use.age}}</li>
 </ul>
